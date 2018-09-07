@@ -4,8 +4,6 @@ import android.content.Context;
 
 import com.safeway.scanandgo.ScanAndGoApp;
 
-import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
 

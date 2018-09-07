@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".views.activities.ReceiptActivity">
+
+    <include layout="@layout/toolbar_base" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_23"
+                android:layout_marginBottom="@dimen/margin_15"
+                app:srcCompat="@drawable/ic_swy_logo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/GreyTitle5Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"/>
+
+            <TextView
+                android:id="@+id/timestamp"
+                style="@style/GreyTitle5Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_two" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BlackTitle4Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_23"
+                    android:layout_marginBottom="@dimen/margin_15"
+                    android:textAllCaps="true"
+                    android:text="@string/grocery" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/edible_items_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/BlackTitle4Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_23"
+                    android:layout_marginBottom="@dimen/margin_15"
+                    android:textAllCaps="true"
+                    android:text="@string/grocery_nonedible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/nonedible_items_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_23"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BlackTitle4Regular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tax" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_14"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black_two"
+                        android:text="$10.40" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_two" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackTitle3Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/total" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_24"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="$97.29" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

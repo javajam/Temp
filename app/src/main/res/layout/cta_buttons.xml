@@ -1,0 +1,42 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/cta_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_58"
+        android:background="@color/lipstick"
+        android:text="@string/pay"
+        style="@style/WhiteTitle4Bold"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginEnd="@dimen/margin_23"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/cta_pay_disabled"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_58"
+        android:background="@color/grey_disable"
+        android:text="@string/pay"
+        style="@style/GreyTitle4Bold"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginEnd="@dimen/margin_23"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/cta_view_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_58"
+        android:background="@color/black"
+        android:text="@string/view_receipt"
+        style="@style/WhiteTitle4Bold"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginEnd="@dimen/margin_23"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:visibility="gone" />
+
+</merge>

@@ -3,4 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+    <color name="black_two">#2d2d2d</color>
+    <color name="purplish_grey">#656465</color>
+    <color name="greyish">#a7a7a7</color>
+    <color name="white_two">#dedede</color>
+    <color name="white">#f6f6f6</color>
+    <color name="black_54">#8a000000</color>
+    <color name="black_26">#42000000</color>
+    <color name="lipstick">#e41720</color>
+    <color name="grey_disable">#1e000000</color>
 </resources>

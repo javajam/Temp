@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_15"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_quantity"
+            style="@style/BlackTitle4Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:text="@string/qty"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/receipt_item_desc"
+            style="@style/BlackTitle4Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/black_two"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/BlackTitle4Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:text="@string/regular_price" />
+
+        <TextView
+            android:id="@+id/regular_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/price_indent"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/BlackTitle4Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:text="@string/club_savings" />
+
+        <TextView
+            android:id="@+id/club_savings_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/price_indent"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:text="$1.99-" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/BlackTitle4Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:text="@string/j4u_ecpn" />
+
+        <TextView
+            android:id="@+id/j4u_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/price_indent"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:text="$1.24-" />
+
+    </FrameLayout>
+
+</LinearLayout>

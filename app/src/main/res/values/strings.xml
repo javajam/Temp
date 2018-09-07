@@ -1,3 +1,37 @@
 <resources>
+    <string name="safeway">Safeway</string>
     <string name="app_name">ScanAndGo</string>
+
+    <!-- Pay Bottom Dialog -->
+    <string name="confirm_pay">Confirm &amp; Pay</string>
+    <string name="change">Change</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="add">Add</string>
+    <string name="payment_card_faux">Visa ****9999</string>
+    <string name="subtotal">Subtotal (%s)</string>
+    <string name="clubcard_savings">Clubcard Savings</string>
+    <string name="just_4_u">Just for U coupons</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="pay">Pay</string>
+
+    <!-- Confirmation Page -->
+    <string name="confirmation">Confirmation</string>
+    <string name="view_receipt">View Receipt</string>
+    <string name="transaction_successful">Transaction Successful!</string>
+    <string name="thanks_for_shopping_at_safeway">Thanks for shopping at Safeway!</string>
+
+    <!-- Receipts Page -->
+    <string name="receipt">Receipt</string>
+    <string name="address">7499 Dublin Rd, Dublin, CA 94568</string>
+    <string name="grocery">Grocery</string>
+    <string name="qty">%s QTY</string>
+    <string name="regular_price">Regular Price</string>
+    <string name="club_savings">Club Savings</string>
+    <string name="grocery_nonedible">Grocery Nonedible</string>
+    <string name="j4u_ecpn">J4U eCpn</string>
+
+    <string name="dollar_price">$%s</string>
+    <string name="dollar_discount">$%s-</string>
+
 </resources>
